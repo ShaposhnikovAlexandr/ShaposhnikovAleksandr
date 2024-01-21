@@ -1,6 +1,10 @@
+def factorial(n):
+    res = 1; i = 1
+    while i <= n:
+        res*=i
+        i+=1
+    return res
+
 n = int(input("Введите n: "))
-res = 1; i = 1
-while i <= n:
-    res*=i
-    i+=1
-print("n! = "+str(res))
+
+print("n! = "+str(factorial(n)))
